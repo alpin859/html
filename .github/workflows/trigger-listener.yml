@@ -1,0 +1,1 @@
+name: Trigger Listener\n\non:  \n  repository_dispatch:  \n    types: [trigger-workflow]  \n\njobs:  \n  trigger-ci:  \n    runs-on: ubuntu-latest  \n    steps:  \n      - name: Trigger CI Workflow  \n        uses: workflows/ci.yml//dispatch
